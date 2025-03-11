@@ -1,0 +1,236 @@
+.cart {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cart__container {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.cart__header, .cart__item {
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.cart__header {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 6px 6px 0 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.cart__item {
+    transition: background-color 0.2s;
+}
+
+.cart__item:hover {
+    background-color: #f9f9f9;
+}
+
+.cart__item-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart__item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cart__item-image:hover {
+    transform: scale(1.05);
+}
+
+.cart__item-details {
+    font-size: 14px;
+}
+
+.cart__item-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cart__item-variant {
+    color: #777;
+    font-size: 13px;
+}
+
+.cart__item-price, .cart__item-total {
+    font-weight: 600;
+    text-align: center;
+}
+
+.cart__item-price-discounted {
+    color: #e41e3f;
+    font-size: 16px;
+    display: block;
+}
+
+.cart__item-price-original {
+    text-decoration: line-through;
+    font-size: 13px;
+    color: #999;
+    display: block;
+    margin-top: 4px;
+}
+
+.cart__item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.cart__item-quantity-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Style input số lượng */
+.cart__item-quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Style nút cập nhật và xóa */
+.cart__update-btn, .cart__delete-btn {
+    height: 40px; /* Cùng chiều cao với input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+
+.cart__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+}
+
+.cart__footer-left button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.cart__footer-left button:hover {
+    background-color: #e9e9e9;
+    border-color: #ccc;
+}
+
+.cart__footer-right {
+    text-align: right;
+}
+
+.cart__summary-shipping {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.cart__summary-total {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cart__summary-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e41e3f;
+}
+
+.cart__submit-btn {
+    background-color: var(--maincolor);
+    opacity: .9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cart__submit-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cart__header, .cart__item {
+        grid-template-columns: 30px 2fr 1fr 1fr 60px;
+    }
+    
+    .cart__header-price, .cart__item-price {
+        display: none;
+    }
+    
+    .cart__item-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cart__footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cart__footer-left, .cart__footer-right {
+        width: 100%;
+    }
+    
+    .cart__footer-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart__header, .cart__item {
+        grid-template-columns: 30px 2fr 1fr 60px;
+        font-size: 13px;
+    }
+    
+    .cart__header-total, .cart__item-total {
+        display: none;
+    }
+    
+    .cart__item-details {
+        font-size: 13px;
+    }
+}

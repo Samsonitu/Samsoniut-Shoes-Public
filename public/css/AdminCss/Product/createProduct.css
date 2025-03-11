@@ -1,0 +1,25 @@
+.form-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    color: #03177e;
+}
+
+.preview-image {
+    max-width: 150px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}

@@ -1,0 +1,53 @@
+.section-ordered {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-ordered .nav-tabs {
+    justify-content: center;
+}
+
+.section-ordered .nav-link {
+    width: 200px;
+    text-align: center;
+}
+
+.order-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.order-details {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.status-badge {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 15px;
+}
+.empty-order-message {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+}

@@ -1,0 +1,47 @@
+/* Background Styling */
+.auth {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(3, 23, 126, 1) 55%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Card Styling */
+.auth__card {
+    border-radius: 1rem;
+}
+
+/* Image Styling */
+.auth__image {
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+/* Logo Styling */
+.auth__logo {
+    width: 40%;
+}
+
+/* Form Styling */
+.auth__form {
+    padding: 2rem 3rem;
+}
+
+.auth__form-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.auth__form-subtitle {
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.auth__input {
+    margin-bottom: 1rem;
+}
+
+/* Submit Button */
+.auth__submit {
+    padding: 0.5rem 2rem;
+}

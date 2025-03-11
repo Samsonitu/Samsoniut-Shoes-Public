@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: 100%;
+    background-color: #03177e;
+    padding: 20px 0;
+}
+
+.logo-name {
+    color: #fff;
+    margin: 0;
+}
+
+.logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.verification-container {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: calc(100% - 20px); /* Đảm bảo input không bị tràn */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #03177e;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.resend {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.resend a {
+    color: #03177e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resend a:hover {
+    text-decoration: underline;
+}
