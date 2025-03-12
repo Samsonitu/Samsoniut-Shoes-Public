@@ -1,4 +1,4 @@
-# Package required 
+# Composer required 
 1 - composer require phpmailer/phpmailer
 https://packagist.org/packages/phpmailer/phpmailer
 
