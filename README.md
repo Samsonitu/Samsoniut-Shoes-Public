@@ -5,7 +5,7 @@ https://packagist.org/packages/phpmailer/phpmailer
 2 - composer require google/apiclient
 https://packagist.org/packages/google/apiclient
 
-# Simple PHP MVC Framework (no composer)
+# Simple PHP MVC Framework
 
 ## Table of Content:
 
